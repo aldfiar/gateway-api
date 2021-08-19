@@ -17,6 +17,7 @@ import perpFiRoutes from './routes/perpetual_finance.route';
 import terraRoutes from './routes/terra.route';
 import uniswapRoutes from './routes/uniswap';
 import uniswapV3Routes from './routes/uniswap_v3';
+import quickswpRouter from './routes/quickswap';
 
 // load configs
 const globalConfig =
@@ -63,6 +64,7 @@ app.use('/eth', ethRoutes);
 app.use('/eth/uniswap', uniswapRoutes);
 app.use('/eth/uniswap/v3', uniswapV3Routes);
 app.use('/eth/balancer', balancerRoutes);
+app.use('/eth/quickswap', quickswpRouter);
 app.use('/terra', terraRoutes);
 app.use('/perpfi', perpFiRoutes);
 
