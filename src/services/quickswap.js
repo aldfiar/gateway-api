@@ -15,7 +15,7 @@ const GAS_LIMIT = globalConfig.getConfig('QUICKSWAP_GAS_LIMIT') || 150688;
 const TTL = globalConfig.getConfig('QUICKSWAP_TTL') || 300;
 const UPDATE_PERIOD = globalConfig.getConfig('QUICKSWAP_UPDATE_PERIOD') || 300000; // stop updating pair after 5 minutes from last request
 
-export default class Quicswap {
+export default class Quickswap {
   constructor(network = 'matic') {
     this.providerUrl = globalConfig.getConfig('ETHEREUM_RPC_URL');
     this.network = globalConfig.getConfig('ETHEREUM_CHAIN');
