@@ -36,7 +36,6 @@ export default class Balancer {
       default: {
         const err = `Invalid network ${network}`;
         logger.error(err);
-        throw Error(err);
       }
     }
   }
