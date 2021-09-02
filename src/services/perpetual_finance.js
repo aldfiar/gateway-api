@@ -40,7 +40,6 @@ export default class PerpetualFinance {
       default: {
         const err = `Invalid network ${network}`;
         logger.error(err);
-        throw Error(err);
       }
     }
 
